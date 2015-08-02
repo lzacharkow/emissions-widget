@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      LZ Opower Exercise
+    </title>
+    <link href="css/site.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"> </script>
+    <script type="text/javascript" src="js/userData.js"> </script>
+    <script type="text/javascript" src="js/calculations.js"> </script>
+    <script type="text/javascript" src="js/interactions.js"> </script>    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+
+  <body>
+
+    <div class="layout">
+      <div class="device desktop">Desktop widget within Dashboard</div>
+      <div class="device tablet">Tablet widget within Dashboard</div>
+      <div class="device mobile">Mobile widget within Dashboard</div>
+
+      <div class="col1 wire">Another widget.</div
+
+      ><div class="col2 widget">
+      <!-- this block contains our widget -->      
+
+        <div class="side-a">
+          <div class="header">
+            Good Job! You saved energy last month.
+          </div>
+
+          <p> <!-- for vertical alignment -->
+            <div class="dialogue-wrapper">
+
+              <!-- opening prompt with call to action -->
+              <div class="dialogue a">
+                <div class="copy">
+                  You saved CO2 emissions from being released into the environment by conserving energy.
+                </div>
+                <div class="button">How much did you save?</div>
+              </div>
+
+              <!-- show time saved, hidden by default -->
+              <div class="dialogue b">
+                <div class="copy">
+                  When you saved <span id="kWh-saved"></span> last month, you removed a car from the road for
+                </div>
+                <div class="time-saved">
+                  <span id="days"></span> <span id="hours"</span>
+                </div>
+                <div class="learn-more">Learn More</div>
+              </div>
+
+            </div> <!-- end dialogue-wrapper -->
+
+            <div class="illustration-wrapper">
+              <div id="sky"></div>
+              <div id="hills"></div>
+              <div id="trees"></div>
+              <div id="road"></div>
+              <div id="car"></div>
+              <img src="images/mask.png" />
+            </div>
+
+          </p>
+
+        </div> <!-- end side-a -->
+
+        <!-- side-b contains info about conversion and user's energy usage -->
+        <div class="side-b">
+            <div class="header">More about your energy usage</div>
+            <p>
+              <div class="dialogue-wrapper">
+                <span>1 kWh produces the same amount of CO2
+                as 1.3 hours of driving.</span><br><br>
+                Use less than <span>980 kWh</span> this month to continue saving energy and emissions!
+                <div class="learn-more not-mobile">Back to Last Month</div>
+              </div>
+              <div class="graph"> <!-- This is simply a static representation of a graph that would be dynamic -->
+                <div class="header">Your Energy Usage in kWh</div>
+                <img src="images/graph.png">
+              </div>
+            </p>
+            <div class="learn-more mobile">Back to Last Month</div>                
+        </div> <!-- end side-b -->
+
+      <!-- end widget -->
+      </div
+
+      ><div class="col2 wire">Another widget.</div>
+
+    </div>
+
+  </body>
+
+</html>

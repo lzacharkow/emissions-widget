@@ -1,0 +1,206 @@
+@import 'layout.less';
+
+// Widget styles --------------------------------
+
+.widget
+{
+	display: inline-block;
+	padding: 20px;
+	margin-bottom: 2%;
+	border: 3px solid @light-grey;	
+	float: left;
+	position: relative;
+}
+
+.header
+{
+	display: block;
+	text-align: center;
+	font-size: 90%;
+	font-weight: 700;
+	color: @grey;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	margin-bottom: 20px;
+}
+
+.dialogue-wrapper
+{
+	width: 45%;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	padding-right: 20px;
+	text-align: center;	
+	line-height: 1.5;
+	span { color: @ultra-blue; }	
+}
+
+.dialogue
+{
+	display: inline-block;
+	position: relative;
+	&.b { display: none; }
+	.transition(margin .3s);
+}
+
+.button
+{
+	display: inline-block;
+	padding: 14px 18px;
+	margin-top: 20px;	
+	color: @ultra-blue;
+	border: 2px solid @ultra-blue;
+	border-bottom: 2px solid @ultra-blue;
+	cursor: pointer;
+	font-weight: 500;
+	&:hover
+	{
+		border-color: fade(@ultra-blue, 50%);
+	}
+}
+
+.time-saved
+{
+	margin: 14px 0;
+	color: @ultra-blue;
+	font-size: 120%;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.learn-more
+{
+	color: @grey;
+	font-size: 90%;
+	cursor: pointer;
+	&:hover { text-decoration: underline; }
+}
+
+// side-b styles for "More about your energy usage"
+
+.side-b
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+	display: none;
+	background: #fff;
+	.transition(visibility .2s);
+	&.show-side-b
+	{
+		visibility: visible;
+	}
+}
+
+.side-b
+{
+	.dialogue-wrapper
+	{
+		text-align: left;
+		width: 55%;
+		padding-right: 20px;
+		max-width: 400px;
+		font-size: 90%;
+		span
+		{
+			font-weight: 700;
+		}
+	}
+	.learn-more
+	{
+		margin-top: 20px;
+		&.mobile
+		{
+			font-size: 110%;
+			margin-top: 30px;
+		}
+	}
+}
+
+.graph
+{
+	width: 44%;
+	max-width: 400px;
+	float: right;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	background: @light-grey;
+	text-align: center;
+	padding: 20px 10px;
+	font-size: 90%;
+	img
+	{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+// Illustration styles --------------------------------
+
+.illustration-wrapper
+{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 54%;
+	overflow: hidden;
+	img
+	{
+		width: 100%;
+		position: relative;
+	}
+}
+
+#sky
+{	
+	position: absolute;	
+	width: 100%;
+	height: 200%;	
+	top: 0;
+	left: 0;
+	background-image: url('../images/sky.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;	
+	&.transition-class
+	{
+		.transition (transform 4s);
+		.transition (-webkit-transform 4s);
+	}
+}
+
+#hills, #trees, #road
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;		
+	bottom: 0;
+	left: 0;
+	background-size: 200%;
+	background-position-x: 0%;	
+	background-position-y: bottom;
+	background-repeat: repeat-x;
+}
+
+#hills	{ background-image: url('../images/hills.png'); }
+#trees	{ background-image: url('../images/trees.png'); }
+#road	{ background-image: url('../images/road.png'); bottom: -1px;} // < cover up weird alignment
+
+#car
+{
+	position: absolute;
+	width: 20%;
+	height: 19%;
+	bottom: 4%;
+	left: 40%;
+	background-image: url('../images/car.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	.transition(bottom .3s, opacity .3s;);
+}

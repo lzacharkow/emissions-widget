@@ -1,0 +1,71 @@
+// Fonts
+
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700);
+
+// Functions
+
+.noselect
+{
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.transition(@props) /* .transition(attribute .5s) */
+{
+    -webkit-transition: @props;
+    -moz-transition: @props;
+    -o-transition: @props;
+    transition: @props;
+}
+
+// Variables 
+
+@light-grey: #eee;
+@grey: #a8b7c1;
+@ultra-blue: #421cef;
+
+
+// Layout styles --------------------------------
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+}
+
+.layout
+{
+	margin: 0 auto;
+	padding: 40px;
+	max-width: 1440px;
+}
+
+.device
+{
+	margin-bottom: 2%;
+	font-family: Courier, monospace;
+	font-size: 100%;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: @grey;
+}
+
+.col1 { width: 100%; }
+.col2 { width: 49%; }
+
+.wire
+{
+	min-height: 240px;
+	display: inline-block;
+	float: right;
+	padding: 110px;
+	margin-bottom: 2%;
+	border: 3px solid @light-grey;
+	font-family: Courier, mono-space;
+	font-weight: 700;
+	color: @grey;
+	text-align: center;
+}
