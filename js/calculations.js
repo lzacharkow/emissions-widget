@@ -23,9 +23,6 @@ $(document).ready(function(){
   */
 
   function kwhToTime (kwh) {
-    if (!kwh) {
-      return error;
-    }
     return kwh * 1.335
   }
 
