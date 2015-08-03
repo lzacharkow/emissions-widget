@@ -55,7 +55,7 @@ In my opinion, energy displacement is hard to understand. I'm sure there are som
 
 Greenhouse gas emissions, on the other hand, are a conversation topic around most dinner tables. 
 
-When we take the average CO2 emissions from 1 kWh and compare it to the average emissions from a vehicle per month, we find that **the CO2 from 1 kWh = 1.335 hours of driving emissions per month**. (If you're interested in how I got this number, inspect the comment block in `calculations.js`)
+When we take the average CO2 emissions from 1 kWh and compare it to emissions from a vehicle per month, we find that **the CO2 from 1 kWh = 1.335 hours of driving emissions from the average driver per month**. (If you're interested in how I got this number, inspect the comment block in `calculations.js`)
 
 And there we have our comparison. When you take kWh and compare it to sometime that everyone can experience - time, and more specifically, driving-time ("what's your daily commute?") - then we've found a relatable metric that will do the job.
 
