@@ -6,7 +6,7 @@ This widget gives a small glimpse into the impact that energy conservation has o
 
 What does it take to remove a single car from the road? (spoiler-alert: it takes _a lot_) If I was asking myself this question, a consumer might wonder the same thing. The widget should break down this equation into a bite-size chunk.
 
-In the next section, I'll digress into some research that shaped my design choices. The section named "Savings" is where the final idea began to take shape.
+In the next section, I'll digress into some research that shaped my design choices.
 
 ## Research
 
